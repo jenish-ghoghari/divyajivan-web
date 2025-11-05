@@ -1,6 +1,6 @@
 import FSSAI from "./assets/fssaiLogo.png";
 import GMP from "./assets/gmpLogo.png";
-import GLP from "./assets/GLPLogo.png";
+import GLP from "./assets/glpLogo.png";
 import FDA from "./assets/FDALogo.png";
 import asso1 from "./assets/asso1.png";
 import asso2 from "./assets/asso2.png";
