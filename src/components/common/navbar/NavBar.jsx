@@ -5,11 +5,9 @@ import { Link } from "react-router-dom";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 
 const navItems = [
-  { id: 1, name: "Home", url: "/home" },
+  { id: 1, name: "Home", url: "/" },
   { id: 2, name: "About", url: "/about" },
-  { id: 3, name: "Process", url: "/process" },
-  { id: 4, name: "Portfolio", url: "/portfolio" },
-  { id: 5, name: "Blog", url: "/blog" },
+  { id: 3, name: "Formulation", url: "/formulation" },
   { id: 6, name: "Services", url: "/services" },
 ];
 
