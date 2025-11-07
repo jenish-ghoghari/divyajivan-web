@@ -4,6 +4,7 @@ import MainLayout from "./layout/MainLayout";
 import HomeNew from "./pages/HomeNew";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import FormulationPage from "./pages/Formulation";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomeNew />} /> {/* Default home route */}
           <Route path="about" element={<About />} />
+          <Route path="formulation" element={<FormulationPage />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
