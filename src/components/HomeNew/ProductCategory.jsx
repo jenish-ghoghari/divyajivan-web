@@ -15,7 +15,7 @@ const ProductCategory = () => {
       </div>
 
       {/* Product Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3  gap-6">
         {productCategories.map((data, index) => (
           <Link
             key={index}
@@ -26,7 +26,7 @@ const ProductCategory = () => {
             <img
               src={data.image}
               alt={data.title}
-              className="w-full h-64 object-cover"
+              className="w-full h-80 object-cover"
             />
 
             {/* Top overlay (blue) for button */}

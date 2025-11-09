@@ -6,7 +6,6 @@ import ScrollToTop from "../components/common/scrollToTop/ScrollToTop";
 const MainLayout = () => {
   return (
     <>
-      <NavBar />
       <Outlet />
       <div className="bg-[#2A374A]">
         <Footer />

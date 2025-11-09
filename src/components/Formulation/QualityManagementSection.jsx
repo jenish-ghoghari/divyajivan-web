@@ -122,7 +122,7 @@ const sections = [
 
 const QualityManagementSection = () => {
   return (
-    <section className="bg-white py-16 sm:py-20 md:py-24">
+    <section className="bg-white py-16 sm:py-16">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
         {sections.map((item, index) => (
           <div

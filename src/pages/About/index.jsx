@@ -3,7 +3,8 @@ import HeroSection from "../../components/About/HeroSection";
 import InfoSection from "../../components/About/InfoSection";
 import VisionSection from "../../components/About/VisionSection";
 import OurJourney from "../../components/About/OurJourney";
-import Certifications from "../../components/Home/Certifications";
+import CertificationsSection from "../../components/HomeNew/CertificationsSection";
+import CoreValues from "../../components/About/CoreValues";
 
 const AboutPage = () => {
   return (
@@ -11,8 +12,9 @@ const AboutPage = () => {
       <HeroSection />
       <InfoSection />
       <VisionSection />
+      <CoreValues />
       <OurJourney />
-      <Certifications />
+      <CertificationsSection />
     </div>
   );
 };

@@ -6,97 +6,81 @@ import {
   FaCertificate,
   FaGlobe,
 } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const timelineData = [
   {
     year: "2021 – Vision Begins",
     title: "Idea & Planning",
     text: "Thought of starting a pharmaceutical manufacturing plant with the mission to provide innovative and affordable medicines.",
-    icon: <FaLightbulb className="text-yellow-500 text-xl" />,
+    icon: <FaLightbulb className="text-5xl text-blue-900 mx-auto" />,
   },
   {
     year: "2022 – Foundation & Setup",
     title: "Location & Setup",
     text: "Selected the site and started groundwork for world-class pharmaceutical manufacturing facilities.",
-    icon: <FaMapMarkerAlt className="text-red-500 text-xl" />,
+    icon: <FaMapMarkerAlt className="text-5xl text-blue-900 mx-auto" />,
   },
   {
     year: "2023 – Plant Construction",
     title: "Manufacturing Unit",
     text: "State-of-the-art plant construction initiated, focused on quality and regulatory standards.",
-    icon: <FaIndustry className="text-blue-500 text-xl" />,
+    icon: <FaIndustry className="text-5xl text-blue-900 mx-auto" />,
   },
   {
     year: "2024 – Licensing Milestone",
     title: "Schedule M 25 & 28 Licenses",
     text: "Achieved key licenses to manufacture tablets, capsules, ointments, and syrups.",
-    icon: <FaCertificate className="text-green-500 text-xl" />,
+    icon: <FaCertificate className="text-5xl text-blue-900 mx-auto" />,
   },
   {
     year: "2025 – Quality Certifications",
     title: "Global Standards",
     text: "Secured State GMP and WHO-GMP certifications, ensuring compliance with international benchmarks.",
-    icon: <FaCertificate className="text-indigo-500 text-xl" />,
+    icon: <FaCertificate className="text-5xl text-blue-900 mx-auto" />,
   },
   {
     year: "2026 – Expanding Global Footprints",
     title: "International Registrations",
     text: "Upcoming registrations in Tanzania, Zimbabwe, and Kenya, building trust across borders.",
-    icon: <FaGlobe className="text-teal-500 text-xl" />,
+    icon: <FaGlobe className="text-5xl text-blue-900 mx-auto" />,
   },
 ];
 
 const OurJourney = () => {
   return (
-    <section className="w-full  py-16 sm:py-24">
-      <div className="max-w-5xl mx-auto px-6 sm:px-8 relative">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-16">
-          Our Journey
+    <section className="py-16 bg-gray-100/80">
+      <div className="container mx-auto px-6 md:px-10 lg:px-16">
+        <h2 className="text-xl sm:text-3xl font-bold text-center text-gray-800 mb-12">
+          Milestones Reached in Our Journey of Growth & Innovation{" "}
         </h2>
 
-        {/* Timeline Wrapper */}
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="hidden sm:block absolute top-0 left-1/2 -translate-x-1/2 w-1 bg-gray-200 h-full rounded-full"></div>
+        {/* Cards Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {timelineData.map((item, index) => (
+            <div
+              key={index}
+              className="relative bg-white rounded-3xl transition-all duration-500 p-8 flex flex-col gap-5  min-h-[300px] group"
+            >
+              {/* Year */}
+              <span className="text-sm text-gray-400 font-medium mb-2">
+                {item.year}
+              </span>
 
-          {/* Timeline items */}
-          <div className="space-y-12 sm:space-y-16">
-            {timelineData.map((item, index) => (
-              <div
-                key={index}
-                className={`relative flex flex-col sm:flex-row items-center gap-6 ${
-                  index % 2 === 0 ? "sm:flex-row-reverse" : ""
-                }`}
-              >
-                {/* Connector line for mobile */}
-                {index !== timelineData.length - 1 && (
-                  <div className="absolute left-[1.9rem] top-10 w-0.5 h-full bg-gray-200 sm:hidden"></div>
-                )}
+              {/* Icon */}
+              <div className="flex justify-end mb-4">{item.icon}</div>
 
-                {/* Icon */}
-                <div className="relative z-10 flex-shrink-0 bg-white border-2 border-gray-200 w-12 h-12 rounded-full flex items-center justify-center shadow-md">
-                  {item.icon}
-                </div>
+              {/* Title */}
+              <h3 className="text-xl font-semibold text-[#0E2B5C] leading-snug mb-2">
+                {item.title}
+              </h3>
 
-                {/* Content */}
-                <div
-                  className={`bg-white border border-gray-100 rounded-2xl shadow-sm p-6 sm:w-1/2 transition-all duration-300 hover:shadow-md ${
-                    index % 2 === 0 ? "sm:text-left" : "sm:text-right"
-                  }`}
-                >
-                  <p className="text-sm text-blue-600 font-medium mb-1">
-                    📅 {item.year}
-                  </p>
-                  <h3 className="text-gray-900 font-semibold text-lg">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 mt-2 text-sm leading-relaxed">
-                    {item.text}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+              {/* Description */}
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {item.text}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

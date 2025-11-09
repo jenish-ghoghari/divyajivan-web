@@ -2,13 +2,6 @@ import FSSAI from "./assets/fssaiLogo.png";
 import GMP from "./assets/gmpLogo.png";
 import GLP from "./assets/glpLogo.png";
 import FDA from "./assets/FDALogo.png";
-import asso1 from "./assets/asso1.png";
-import asso2 from "./assets/asso2.png";
-import asso3 from "./assets/asso3.png";
-import asso5 from "./assets/asso5.png";
-import asso6 from "./assets/asso6.png";
-import asso7 from "./assets/asso7.png";
-import asso8 from "./assets/asso8.png";
 
 import ContractManufacturing from "./assets/Contract-Manufacturing-Photo.jpg";
 import Quality from "./assets/Quality-Photo.jpg";
@@ -48,37 +41,6 @@ export const licenses = [
     image: FDA,
     name: "FDA",
     alt: "USFDA-approved pharma third-party manufacturers",
-  },
-];
-
-export const associateMembers = [
-  {
-    id: 1,
-    img: asso1,
-  },
-  {
-    id: 2,
-    img: asso2,
-  },
-  {
-    id: 3,
-    img: asso3,
-  },
-  {
-    id: 5,
-    img: asso5,
-  },
-  {
-    id: 6,
-    img: asso6,
-  },
-  {
-    id: 7,
-    img: asso7,
-  },
-  {
-    id: 8,
-    img: asso8,
   },
 ];
 
@@ -149,32 +111,20 @@ export const services = [
 export const productCategories = [
   {
     title: "Tablets",
-    url: "product/tablets",
+    url: "product",
     alt: ". Best third-party pharma manufacturer for tablets",
     image: Tablet,
   },
   {
     title: "Capsules",
-    url: "product/capsule",
+    url: "product",
     alt: "Third-party pharma contract for capsules & syrups",
     image: Capsules,
   },
   {
     title: "External Preparations",
-    url: "product/external-preparation",
+    url: "product",
     alt: ". Surat-based third-party pharma company",
     image: ExternalPreparation,
-  },
-  {
-    title: "Syrups",
-    url: "product/syrup",
-    alt: "Veterinary drug contract manufacturer",
-    image: Syrups,
-  },
-  {
-    title: "Solutions",
-    alt: "Derma third-party manufacturing pharma",
-    url: "product/solutions",
-    image: Solutions,
   },
 ];

@@ -1,5 +1,5 @@
 import React from "react";
-import aboutCapsulesGlobal from "../../assets/aboutCapsulesGlobal.jpg";
+import aboutCapsulesGlobal from "../../assets/aboutpage.jpg";
 
 const InfoSection = () => {
   return (
@@ -12,7 +12,7 @@ const InfoSection = () => {
 
       {/* Main Container */}
       <div className="container relative mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
-        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14 lg:gap-20">
+        <div className="flex flex-col md:flex-row items-start gap-10 md:gap-14 lg:gap-20">
           {/* Left Image Section */}
           <div className="w-full lg:w-1/2 relative group">
             <div className="overflow-hidden rounded-3xl transition-transform duration-700 group-hover:scale-[1.03]">
@@ -27,8 +27,8 @@ const InfoSection = () => {
           {/* Right Content Section */}
           <div className="w-full lg:w-1/2 space-y-5 text-center md:text-left">
             <h2 className="text-2xl sm:text-3xl  font-bold text-gray-900 leading-tight">
-              The Leading Pharmaceutical in India
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mt-1">
+              <p>The Leading</p>  Pharmaceutical in India
+              <span className="block mt-4 uppercase text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 ">
                 Divyajivan Lifescience PVT LTD
               </span>
             </h2>

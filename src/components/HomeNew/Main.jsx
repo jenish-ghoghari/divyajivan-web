@@ -1,17 +1,19 @@
 import AboutUs from "./AboutUs";
 import HeroSection from "./HeroSection";
 import ProductCategory from "./ProductCategory";
-import Services from "./Services";
-import WhatWeDo from "./WhatWeDo";
 import { Helmet } from "react-helmet";
-import Certifications from "../Home/Certifications";
-import WhyChooseUs from "../Home/WhyChooseUs";
+import ServicesSection from "./Services";
+import CertificationsSection from "./CertificationsSection";
 
 const Main = () => {
   return (
     <>
       <Helmet>
-        <title>Leading third-party pharmaceutical manufacturer offering contract pharma manufacturing, private label services, and bulk drug formulations.</title>
+        <title>
+          Leading third-party pharmaceutical manufacturer offering contract
+          pharma manufacturing, private label services, and bulk drug
+          formulations.
+        </title>
         <meta
           name="description"
           content="Collaborate with Leaders in Quality Third-Party Manufacturing. Best third-party pharmaceutical manufacturer in India, USFDA-approved pharma third-party manufacturers,  EU-GMP contract manufacturing pharma"
@@ -22,12 +24,11 @@ const Main = () => {
         />
       </Helmet>
       <HeroSection />
+      <ServicesSection />
       <AboutUs />
       <ProductCategory />
-      <WhyChooseUs />
-      <WhatWeDo />
-      
-      <Certifications />
+
+      <CertificationsSection />
     </>
   );
 };

@@ -33,13 +33,12 @@ export default function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-4xl drop-shadow-lg">
-              DIVYAJIVAN LIFESCIENCES PVT LTD
+              Your Partner in Pharmaceutical Excellence
             </h1>
 
             <p className="mt-4 text-base md:text-lg lg:text-xl italic max-w-3xl text-gray-100">
-              Offers a wide range of pharmaceutical products — Tablets,
-              Capsules, Creams, and External Preparations (ointments, gels, and
-              lotions).
+              Nothing can beat the power of meaningful business collaborations!
+              Let's Collaborate!
             </p>
           </motion.div>
         </div>

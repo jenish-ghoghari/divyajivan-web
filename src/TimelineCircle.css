@@ -1,0 +1,82 @@
+.cards-container {
+  --base-rotation: 0deg;
+  --full-circle: 360deg;
+  --radius: 35vw;
+  --duration: 250ms;
+  position: relative;
+  width: calc(var(--radius) * 2);
+  height: calc(var(--radius) * 2);
+  margin: 4rem auto;
+}
+
+.cards {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  list-style: none;
+  transition: transform var(--duration) ease-in-out;
+  transform: rotate(
+    calc(var(--base-rotation) - (var(--index) * var(--full-circle) / var(--items)))
+  );
+}
+
+.cards li {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  transform-origin: center;
+  transform: rotate(calc(var(--i) * 360deg / var(--items)));
+  pointer-events: none;
+}
+
+.cards li button.year-btn {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  transform: translateY(calc(var(--radius) * -1 - 1.2rem));
+  width: 50px;
+  height: 50px;
+  color: #666;
+  cursor: pointer;
+  pointer-events: all;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: color var(--duration) ease-in-out;
+}
+
+.cards li button.year-btn:hover {
+  color: steelblue;
+}
+
+.cards li.active button.year-btn {
+  color: steelblue;
+  font-weight: bold;
+}
+
+.cards li .info-content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity var(--duration) ease-in-out;
+}
+
+.cards li:not(.active) .info-content {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    --radius: 60vw;
+  }
+}
+@media (max-width: 480px) {
+  .cards-container {
+    --radius: 80vw;
+  }
+}
