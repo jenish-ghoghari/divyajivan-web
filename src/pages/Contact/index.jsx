@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import HeroSection from "../../components/Contact/HeroSectoion";
+import AppointmentForm from "../../components/Contact/AppointmentForm";
 
 const ContactPage = () => {
   return (
     <div>
-      contact
+      <HeroSection />
+      <AppointmentForm />
     </div>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

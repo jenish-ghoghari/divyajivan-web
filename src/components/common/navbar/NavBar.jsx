@@ -24,9 +24,9 @@ export default function NavBar() {
           HOME
         </a>
         <a href="/about">ABOUT US</a>
-        <a href="/formulation">Formulation</a>
+        <a href="/formulation">FORMULATION</a>
         <a href="/services">SERVICES</a>
-        <a href="/blog">BLOG</a>
+        <a href="/products">PRODUCTS</a>
         <a href="/contact">CONTACT US</a>
       </nav>
 
