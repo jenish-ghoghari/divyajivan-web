@@ -52,23 +52,28 @@ const CollaborateSection = () => {
           Our Collaboration
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-6">
           {sections.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl border border-gray-200 p-8 shadow-sm hover:shadow-lg transition-all"
+              className="w-full sm:w-[45%] lg:w-[30%] bg-white rounded-3xl 
+                 border border-gray-200 p-8 shadow-sm 
+                 hover:shadow-lg transition-all"
             >
               <h2 className={`text-2xl font-semibold mb-4 ${item.color}`}>
                 {item.title}
               </h2>
-              <ul className="space-y-2 text-gray-700 text-base leading-relaxed">
-                {item.points.map((point, i) => (
-                  <li key={i} className="flex items-start">
-                    <span className="text-gray-500 mr-2">•</span>
-                    {point}
-                  </li>
-                ))}
-              </ul>
+
+              {item.points.length > 0 && (
+                <ul className="space-y-2 text-gray-700 text-base leading-relaxed">
+                  {item.points.map((point, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-gray-500 mr-2">•</span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>

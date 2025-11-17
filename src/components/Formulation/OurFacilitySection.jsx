@@ -73,7 +73,7 @@ const infrastructureFeatures = [
 
 export default function OurFacilitySection() {
   return (
-    <section className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-20 mb-10">
+    <section className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-20 mt-20 mb-10">
       {/* Header */}
       <h2 className="text-4xl md:text-5xl font-bold text-teal-800 mb-10">
         Facilities we provide{" "}

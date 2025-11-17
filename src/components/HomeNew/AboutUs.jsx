@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFlask, FaMicroscope, FaVials, FaCapsules } from "react-icons/fa";
 import microscopeImg from "../../assets/microscope.png"; // your image path
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -42,9 +43,9 @@ const PharmaSection = () => {
             earned our position among the top pharmaceutical companies in
             Surat. Our comprehensive range of services includes:
           </p>
-          <button className="bg-blue-900 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-800 transition">
+          <Link  to="/about" className="bg-blue-900 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-800 transition">
             About Us
-          </button>
+          </Link>
         </div>
 
         {/* CENTER IMAGE */}

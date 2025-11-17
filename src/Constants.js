@@ -111,19 +111,19 @@ export const services = [
 export const productCategories = [
   {
     title: "Tablets",
-    url: "product",
+    url: "products",
     alt: ". Best third-party pharma manufacturer for tablets",
     image: Tablet,
   },
   {
     title: "Capsules",
-    url: "product",
+    url: "products",
     alt: "Third-party pharma contract for capsules & syrups",
     image: Capsules,
   },
   {
     title: "External Preparations",
-    url: "product",
+    url: "products",
     alt: ". Surat-based third-party pharma company",
     image: ExternalPreparation,
   },

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import NavBar from "../common/navbar/NavBar";
 import pharmaCapsule from "../../assets/pharmaCapsule.jpg";
 import pharmaWorld from "../../assets/pharmaWorld.jpg";
+import { Link } from "react-router-dom";
 
 // Each slide with unique gradient overlay (left → right)
 const slides = [
@@ -78,7 +79,7 @@ export default function HeroSection() {
         <NavBar />
 
         {/* Hero Text */}
-        <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-20 z-10">
+        <div className="absolute inset-0 flex flex-col  justify-center px-8 md:px-20 z-10">
           <AnimatePresence mode="wait">
             <motion.div
               key={slide.title}
@@ -95,10 +96,13 @@ export default function HeroSection() {
               </h1>
             </motion.div>
           </AnimatePresence>
+          <Link to={"/contact"} className="bg-teal-400 py-3 px-4 mt-12 w-fit rounded-xl font-bold text-md">
+            Contact Us
+          </Link>
         </div>
 
         {/* Prev / Next Controls */}
-        <div className="absolute bottom-0 right-0 z-20">
+        <div className="absolute bottom-0 right-0 z-10">
           <div className="bg-white relative text-gray-600 px-6 py-6 rounded-tl-3xl flex items-center gap-6 text-sm font-medium">
             <button
               onClick={prevSlide}

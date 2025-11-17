@@ -2,6 +2,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { IoLocationSharp, IoMail, IoCall } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import logo from "../../../assets/Divyajivan-Lifescience-Logo.svg";
+import { Link } from "react-router-dom";
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -17,7 +18,7 @@ export default function Footer() {
           <p className="text-md leading-relaxed text-white max-w-[75%]">
             Leading pharmaceutical manufacturing company in Gujarat with
             state-of-the-art pharmaceutical production facilities. We provide
-            Tablets, Capsules, & ointments (Creams, Lotions, and Gels),
+            Tablets, Capsules, & ointments (Creams, Gels, and Lotions),
             Specialised Pharmaceutical Formulations, Customised Pharma Products
             and Essential Healthcare Solutions.{" "}
           </p>
@@ -30,14 +31,16 @@ export default function Footer() {
               <li className="flex items-start space-x-2">
                 <IoLocationSharp className="text-lg mt-0.5" />
                 <span className="w-[90%]">
-                  1001 & 1002, Zircon Arena, Opp. De’villa Restro, Pal R.T.O to
-                  Hazira Road,Surat-394510, Gujarat, India
+                  <p className="font-bold">Corporate Office: </p> 1001 & 1002,
+                  Zircon Arena, Opp. De’villa Restro, Pal R.T.O to Hazira
+                  Road,Surat-394510, Gujarat, India
                 </span>
               </li>
               <li className="flex items-start space-x-2">
                 <IoLocationSharp className="text-lg mt-0.5 " />
                 <span className="w-[90%]">
-                  231, 232, 233 RJD Integrated Textile Park, Ichhapore
+                  <p className="font-bold">Manufacturing Unit: </p>231, 232, 233
+                  RJD Integrated Textile Park, Ichhapore
                   Surat-394510 Gujarat, India
                 </span>
               </li>
@@ -95,24 +98,29 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/about" className="hover:text-white">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
-                  Certifications
-                </a>
+                <Link to="/formulation" className="hover:text-white">
+                  Formulation
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
-                  Global Presence
-                </a>
+                <Link to="/services" className="hover:text-white">
+                  Service
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
-                  Infrastructure
-                </a>
+                <Link to="/products" className="hover:text-white">
+                  Products
+                </Link>
+              </li>
+               <li>
+                <Link to="/contact" className="hover:text-white">
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -131,19 +139,22 @@ export default function Footer() {
           {/* WHO GMP Certified */}
           <div className="p-6">
             <h3 className="text-lg font-semibold mb-4">
-              Leading WHO GMP Certified Tablet, Capsule, Ointment Manufacturers In India.
+              Leading WHO GMP Certified Tablet, Capsule, Ointment Manufacturers
+              In India.
             </h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li>Tablets</li>
               <li>Capsules</li>
-              <li>Ointments (Creams, Lotions, and Gels)</li>
+              <li>Ointments (Creams, Gels, and Lotions)</li>
             </ul>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="text-center mt-8">
-          <p>Copyright@2021 All Rights Reserved | Divyajivan Lifescience Pvt. LTD</p>
+          <p>
+            Copyright@2021 All Rights Reserved | Divyajivan Lifescience Pvt. LTD
+          </p>
         </div>
       </div>
     </footer>

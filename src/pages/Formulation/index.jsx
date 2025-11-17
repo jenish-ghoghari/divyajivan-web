@@ -12,9 +12,9 @@ const FormulationPage = () => {
       <HeroSection />
       <InfoSection />
       <ManufacturingCapacity />
+      <OurFacilitySection />
       <QualitySection />
       <QualityManagementSection />
-      <OurFacilitySection />
     </>
   );
 };

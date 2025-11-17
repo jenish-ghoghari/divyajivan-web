@@ -2,6 +2,7 @@ import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { GiTestTubes, GiChemicalDrop, GiChemicalTank } from "react-icons/gi";
 import { FaFlask } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -50,7 +51,7 @@ const ServicesSection = () => {
 
             {/* Floating Arrow */}
             <div className="absolute bg-gray-100/80 rounded-tl-3xl p-1.5 -bottom-0 -right-0">
-              <div
+              <Link to={"/services"}
                 className="bg-white rounded-full w-12 h-12 flex items-center justify-center 
                 transition-all duration-500 ease-in-out
                 group-hover:bg-blue-600 group-hover:rotate-[135deg]"
@@ -59,7 +60,7 @@ const ServicesSection = () => {
                   className="text-[#0E2B5C] text-lg transition-all duration-500 ease-in-out 
                   group-hover:text-white group-hover:rotate-[-90deg]"
                 />
-              </div>
+              </Link>
 
               {/* Corner SVG shapes */}
               <div className="absolute -left-5 bottom-0 w-5 h-5 rotate-180">
