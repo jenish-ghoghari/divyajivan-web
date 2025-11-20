@@ -5,16 +5,16 @@ import QualityManagementSection from "../../components/Formulation/QualityManage
 import ManufacturingCapacity from "../../components/Formulation/ManufacturingCapacity";
 import QualitySection from "../../components/Formulation/QualitySection";
 import OurFacilitySection from "../../components/Formulation/OurFacilitySection";
+import CertificationsSection from "../../components/HomeNew/CertificationsSection";
 
 const FormulationPage = () => {
   return (
     <>
       <HeroSection />
       <InfoSection />
-      <ManufacturingCapacity />
       <OurFacilitySection />
-      <QualitySection />
       <QualityManagementSection />
+      <CertificationsSection />
     </>
   );
 };

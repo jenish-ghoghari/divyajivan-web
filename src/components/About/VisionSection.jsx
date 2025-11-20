@@ -6,19 +6,19 @@ import { FiArrowUpRight } from "react-icons/fi";
 const data = [
   {
     id: "01",
-    icon: <FaEye className="text-5xl text-[#0E2B5C] mx-auto" />,
+    icon: <FaEye className="text-6xl text-[#0E2B5C] mx-auto" />,
     title: "Our Vision",
     text: "Our vision is to achieve Excellence in Formulation and to be the most respected Pharma company that Empowers Life Sciences with Quality and Innovation.",
   },
   {
     id: "02",
-    icon: <FaBullseye className="text-5xl text-[#0E2B5C] mx-auto" />,
+    icon: <FaBullseye className="text-6xl text-[#0E2B5C] mx-auto" />,
     title: "Our Mission",
     text: "Innovative and affordable products that address the needs and satisfaction of our customers.",
   },
   {
     id: "03",
-    icon: <FaAward className="text-5xl text-[#0E2B5C] mx-auto" />,
+    icon: <FaAward className="text-6xl text-[#0E2B5C] mx-auto" />,
     title: "Quality",
     text: "Divyajivan Lifescience is a values-led organization that works toward Quality, Purity, and Safety of Drug Products, integrity of products, Excellence of People, Continuous Improvement, and Compliance with the latest regulatory requirements to Care for the World.",
   },

@@ -45,7 +45,7 @@ const ServicesSection = () => {
             <div className="flex justify-end mt-4">{service.icon}</div>
 
             {/* Title */}
-            <h3 className="mt-6 text-xl font-semibold text-[#0E2B5C] leading-snug">
+            <h3 className="mt-6 text-lg sm:text-xl font-semibold text-[#0E2B5C] leading-snug">
               {service.title}
             </h3>
 

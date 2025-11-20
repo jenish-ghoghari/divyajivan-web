@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaArrowAltCircleRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import NavBar from "../common/navbar/NavBar";
 import banner from "../../assets/banner.jpg";
 
@@ -13,7 +11,7 @@ export default function HeroSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-      <div className="relative w-full h-[50vh] lg:h-[55vh] overflow-hidden rounded-3xl text-white">
+      <div className="relative w-full h-[55vh] lg:h-[55vh] overflow-hidden rounded-3xl text-white">
         {/* Background Image with Gradient */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -33,12 +31,13 @@ export default function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-4xl drop-shadow-lg">
-              Formulation{" "}
+              Comprehensive Range of Pharmaceutical Formulations
             </h1>
 
             <p className="mt-4 text-base md:text-lg lg:text-xl italic max-w-3xl text-gray-100">
-              Offers a wide range of pharmaceutical products — Tablets,
-              Capsules, & External Preparations (Creams, Gels, and Lotions).
+              Explore our diverse portfolio of high-quality medicines —
+              scientifically developed to ensure safety, efficacy, and global
+              healthcare excellence.
             </p>
           </motion.div>
         </div>

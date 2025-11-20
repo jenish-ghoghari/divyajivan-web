@@ -29,7 +29,7 @@ const InfoSection = () => {
               packing materials & completed goods. Our state-of-the-art
               manufacturing facility is equipped with the latest technology and
               equipment to ensure high-quality products that meet the standards
-              of the WHO-GMP and PICS guidelines.
+              of the regulatory guidelines.
             </p>
 
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed">

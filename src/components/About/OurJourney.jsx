@@ -30,7 +30,7 @@ const timelineData = [
   {
     year: "2024 – Licensing Milestone",
     title: "Schedule M 25 & 28 Licenses",
-    text: "Achieved key licenses to manufacture tablets, capsules, ointments, and syrups.",
+    text: "Achieved key licenses to manufacture tablets, capsules, external preparations.",
     icon: <FaCertificate className="text-5xl text-blue-900 mx-auto" />,
   },
   {

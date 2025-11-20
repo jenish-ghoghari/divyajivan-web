@@ -21,7 +21,7 @@ const infrastructureFeatures = [
   },
   {
     title: "In-House Purify Water Plant",
-    description: "Used for Reverse Osmosis Water and Demineralized Water.",
+    description: "multi-stage filtration and treatment to remove impurities from water and generate pharmacopoieal grade water.",
   },
   {
     title: "ETP Installed",
@@ -64,18 +64,13 @@ const infrastructureFeatures = [
     description:
       "Plant fully equipped with fire extinguishers for safety compliance.",
   },
-  {
-    title: "Air Conditioning Provided",
-    description:
-      "Air conditioning available wherever required — R.M. Storage, P.M. Storage, Secondary Packaging, Retain Sample, Instrument Lab, etc.",
-  },
 ];
 
 export default function OurFacilitySection() {
   return (
     <section className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-20 mt-20 mb-10">
       {/* Header */}
-      <h2 className="text-4xl md:text-5xl font-bold text-teal-800 mb-10">
+      <h2 className="text-xl md:text-4xl font-bold text-[#032f5a] mb-10">
         Facilities we provide{" "}
       </h2>
 

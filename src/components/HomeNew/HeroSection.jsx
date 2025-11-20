@@ -42,7 +42,7 @@ export default function HeroSection() {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 20000); // 8 seconds
+    }, 8000); // 8 seconds
   };
 
   useEffect(() => {
@@ -59,7 +59,7 @@ export default function HeroSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-      <div className="relative w-full h-[90vh] lg:h-[95vh] overflow-hidden rounded-3xl text-white">
+      <div className="relative w-full  h-[70vh] md:h-[90vh] lg:h-[95vh] overflow-hidden rounded-3xl text-white">
         {/* Background Slide */}
         <AnimatePresence mode="wait">
           <motion.div

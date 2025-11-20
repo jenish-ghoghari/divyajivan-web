@@ -1,62 +1,56 @@
-import { FiArrowUpRight } from "react-icons/fi";
+import Marquee from "react-fast-marquee";
 import GMP from "../../assets/gmpLogo.png";
 import GLP from "../../assets/glpLogo.png";
 import FDCA from "../../assets/FDCALogo.png";
 import WHPGMP from "../../assets/whoGmp.png";
 import ISOCertificate from "../../assets/ISO_9001-2015.png";
+
 const certifications = [
-  {
-    id: 1,
-    title: "WHO-GMP certification",
-    image: WHPGMP,
-  },
-  {
-    id: 3,
-    title: "GMP",
-    image: GMP,
-  },
-  {
-    id: 2,
-    title: "GLP",
-    image: GLP,
-  },
-  {
-    id: 1,
-    title: "FDCA Gujarat",
-    image: FDCA,
-  },
-  { id: 4, title: "ISO 9001:2015", image: ISOCertificate },
+  { id: 1, title: "WHO-GMP certification", image: WHPGMP },
+  { id: 2, title: "ISO 9001:2015", image: ISOCertificate },
+  { id: 3, title: "GMP", image: GMP },
+  { id: 4, title: "GLP", image: GLP },
+  { id: 5, title: "FDCA Gujarat", image: FDCA },
 ];
 
 export default function CertificationsSection() {
   return (
-    <section className="bg-gray-50 py-10 px-5 md:px-10">
-      <div className="container  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+    <section className="bg-white pb-10 px-5 py-8 md:py-10">
+
+      {/* ---------- GRID on LG and above ---------- */}
+      <div className="hidden xl:grid container mx-auto grid-cols-5 gap-6">
         {certifications.map((item) => (
           <div
             key={item.id}
-            className="relative group border border-gray-200 rounded-3xl overflow-hidden  transition-all duration-300"
+            className="border border-gray-200 rounded-3xl bg-white flex flex-col items-center p-6 transition-all"
           >
-            {/* Background Image */}
-            <div
-              className="h-50 bg-cover bg-center"
-              style={{ backgroundImage: `url(${item.image})` }}
-            >
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t  transition-all duration-300"></div>
-
-              {/* Text */}
-              <div className="absolute bottom-5 left-5">
-                <h3 className="text-black text-md  font-semibold">
-                  {item.title}
-                </h3>
-              </div>
-
-              {/* Arrow Button */}
-             
+            <div className="w-full lg:h-30 xl:h-40 flex items-center justify-center">
+              <img src={item.image} className="w-full h-full object-contain" />
             </div>
+            <h3 className="text-black text-lg font-semibold text-center mt-4">
+              {item.title}
+            </h3>
           </div>
         ))}
+      </div>
+
+      {/* ---------- MARQUEE on MOBILE & TABLET ---------- */}
+      <div className="xl:hidden">
+        <Marquee pauseOnHover={true} speed={40} gradient={false}>
+          {certifications.map((item) => (
+            <div
+              key={item.id}
+              className="border border-gray-200 rounded-3xl  bg-white flex flex-col items-center p-6 mx-4 w-60"
+            >
+              <div className="w-full h-32 flex items-center justify-center">
+                <img src={item.image} className="w-full h-full object-contain" />
+              </div>
+              <h3 className="text-black text-base font-semibold text-center mt-3">
+                {item.title}
+              </h3>
+            </div>
+          ))}
+        </Marquee>
       </div>
     </section>
   );

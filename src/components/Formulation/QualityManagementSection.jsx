@@ -1,4 +1,5 @@
 import React from "react";
+import bgImage from "../../assets/Quality-Photo.jpg"; // <-- Add your background image
 
 const sections = [
   {
@@ -106,7 +107,6 @@ const sections = [
       "Innovation and quality culture development",
     ],
   },
-
   {
     title: "Regulatory Compliance & Standards",
     color: "text-green-700",
@@ -122,25 +122,60 @@ const sections = [
 
 const QualityManagementSection = () => {
   return (
-    <section className="bg-white py-16 sm:py-16">
-      <div className="container mx-auto px-6 md:px-10 lg:px-16">
+    <section
+      className="relative py-16 sm:py-20 bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/80"></div>
+
+      <div className="relative container mx-auto px-6 md:px-10 lg:px-16">
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14 lg:gap-20 mb-10">
+          {/* Left Text Section */}
+          <div className="w-full space-y-5 text-center md:text-left">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white leading-tight">
+              Quality Management System (QMS) at DivyaJivan
+            </h2>
+
+            <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
+              DivyaJivan’s{" "}
+              <strong className="text-white">
+                Pharmaceutical Quality Management System (QMS)
+              </strong>{" "}
+              is a structured and integrated framework designed to ensure that
+              our products consistently meet applicable quality standards and
+              regulatory requirements.
+            </p>
+
+            <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
+              Our QMS is aligned with international guidelines such as{" "}
+              <strong className="text-white">
+                ICH Q10, WHO GMP, ISO 9001:2015, and local regulatory authority
+                requirements
+              </strong>
+              .
+            </p>
+          </div>
+        </div>
+
+        {/* Sections */}
         {sections.map((item, index) => (
           <div
             key={index}
-            className="py-8 border-b last:border-b-0 border-gray-200"
+            className="py-8 border-b last:border-b-0 border-gray-400 border-opacity-40"
           >
-            <div className="flex flex-col md:flex-row md:items-start md:gap-10">
+            <div className="mx-auto md:max-w-5xl flex flex-col md:flex-row md:items-start md:gap-10">
               {/* Left Title */}
               <h2
-                className={`text-xl sm:text-2xl font-bold mb-4 md:mb-0 md:w-1/3 ${item.color}`}
+                className={`text-xl sm:text-xl font-bold mb-4 md:mb-0 md:w-1/3 ${item.color} text-white`}
               >
                 {item.title}
               </h2>
 
               {/* Right Description */}
-              <div className="md:w-2/3 space-y-2 text-gray-700 leading-relaxed">
+              <div className="md:w-2/3 space-y-2 text-gray-200 leading-relaxed">
                 {item.points.map((point, i) => (
-                  <p key={i} className="text-base sm:text-lg">
+                  <p key={i} className="text-base sm:text-md">
                     • {point}
                   </p>
                 ))}

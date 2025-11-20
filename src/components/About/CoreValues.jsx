@@ -1,5 +1,6 @@
 import React from "react";
-import Marquee from "react-fast-marquee"; // Install: npm install react-fast-marquee
+import Marquee from "react-fast-marquee";
+import bgImage from "../../assets/Lab.jpeg"; // <-- Add your image here
 
 const CoreValues = () => {
   const coreValues = [
@@ -46,38 +47,40 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-4">
-      <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
-          Our Core Values
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          These principles guide our mission to deliver excellence and
-          compassion in every step we take.
-        </p>
-      </div>
+    <section
+      className="relative py-20 px-4 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-radial from-black/65 to-black "></div>
 
-      {/* Marquee section */}
-      <Marquee
-        gradient={false}
-        speed={40}
-        pauseOnHover={true}
-        className="flex gap-6"
-      >
-        {coreValues.map((value, index) => (
-          <div
-            key={index}
-            className="w-100 h-45 bg-white rounded-2xl p-6 mx-4 flex flex-col my-auto border border-gray-100"
-          >
-            <div>
+      {/* Content Wrapper */}
+      <div className="relative z-10">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+            Our Core Values
+          </h2>
+          <p className="text-gray-200 max-w-2xl mx-auto">
+            These principles guide our mission to deliver excellence and
+            compassion in every step we take.
+          </p>
+        </div>
+
+        {/* Marquee section */}
+        <Marquee gradient={false} speed={40} pauseOnHover={true}>
+          {coreValues.map((value, index) => (
+            <div
+              key={index}
+              className="w-90 min-h-40 bg-white/90 backdrop-blur-lg rounded-2xl p-6 mx-4 border border-gray-100 shadow-lg"
+            >
               <h3 className="text-xl font-semibold text-indigo-600 mb-3">
                 {value.title}
               </h3>
-              <p className="text-gray-600 text-base">{value.content}</p>
-            </div>{" "}
-          </div>
-        ))}
-      </Marquee>
+              <p className="text-gray-700 text-base">{value.content}</p>
+            </div>
+          ))}
+        </Marquee>
+      </div>
     </section>
   );
 };

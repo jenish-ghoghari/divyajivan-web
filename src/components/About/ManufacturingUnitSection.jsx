@@ -12,32 +12,36 @@ import TabletCompressor from "../../assets/TabletCompressor.jpeg";
 import TubeFeelingMachine from "../../assets/TubeFeelingMachine.jpeg";
 
 const manufacturingUnit = [
-  { id: 1, title: "LAB", image: Lab },
+  { id: 6, title: "GRANULATION", image: Granulation },
+  {
+    id: 5,
+    title: "AUTO COATER",
+    image: Coting,
+  },
+  { id: 9, title: "TABLET COMPRESSION", image: TabletCompressor },
+  {
+    id: 4,
+    title: "CAPSULE FILLING MACHINE",
+    image: CapsuleFeelingMachine,
+  },
+  { id: 7, title: "OINTMENT MANUFACTURING", image: OintmentMachine },
+
   {
     id: 2,
     title: "ALU PVC BLISTER",
     image: AluPvcBlister,
   },
+
   {
     id: 3,
-    title: "ALU PVC MACHINE",
+    title: "ALU ALU MACHINE",
     image: AluPvcMachine,
   },
-  {
-    id: 4,
-    title: "CAPSULE FEELING MACHINE",
-    image: CapsuleFeelingMachine,
-  },
-  {
-    id: 5,
-    title: "COATING",
-    image: Coting,
-  },
-  { id: 6, title: "GRANULATION", image: Granulation },
-  { id: 7, title: "OINTMENT MACHINE", image: OintmentMachine },
+
   { id: 8, title: "STRIP MACHINE", image: StripMachine },
-  { id: 9, title: "TABLET COMPRESSOR", image: TabletCompressor },
-  { id: 10, title: "TUBE FELLING MACHINE", image: TubeFeelingMachine },
+  { id: 10, title: "TUBE FILLING MACHINE", image: TubeFeelingMachine },
+
+  { id: 1, title: "PHYSIOCHEMICAL LAB ", image: Lab },
 ];
 
 export default function ManufacturingUnitSection() {
@@ -58,7 +62,9 @@ export default function ManufacturingUnitSection() {
               style={{ backgroundImage: `url(${item.image})` }}
             ></div>
 
-            <div className="absolute bg-white p-3 z-999 bottom-0 w-full text-center font-bold">{item.title}</div>
+            <div className="absolute bg-white p-3 z-999 bottom-0 w-full text-center font-bold">
+              {item.title}
+            </div>
           </div>
         ))}
       </div>

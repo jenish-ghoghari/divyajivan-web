@@ -36,7 +36,7 @@ const InfoSection = () => {
             <p className="text-gray-700 text-sm sm:text-base md:text-md  leading-relaxed">
               Introducing Divyajivan Lifescience Pvt. Ltd., a leading
               pharmaceutical manufacturing company specializing in tablets,
-              capsules, and ointments. Located in the vibrant city of Surat,
+              capsules, and External Preparations. Located in the vibrant city of Surat,
               Gujarat, India, we are committed to delivering high-quality
               healthcare products to meet the diverse needs of our
               customers.With a state-of-the-art facility and a team of

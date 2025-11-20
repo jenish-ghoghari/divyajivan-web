@@ -38,7 +38,7 @@ export default function HeroSection() {
 
             <p className="mt-4 text-base md:text-lg lg:text-xl italic max-w-3xl text-gray-100">
               Offers a wide range of pharmaceutical products — Tablets,
-              Capsules,  Ointment (Creams, Gels, and Lotions).
+              Capsules,  External Preparation (Creams, Gels, and Lotions).
             </p>
           </motion.div>
         </div>

@@ -1,8 +1,8 @@
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { IoLocationSharp, IoMail, IoCall } from "react-icons/io5";
-import { FaWhatsapp } from "react-icons/fa";
 import logo from "../../../assets/Divyajivan-Lifescience-Logo.svg";
 import { Link } from "react-router-dom";
+
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -15,33 +15,34 @@ export default function Footer() {
         {/* Logo + Description */}
         <div className=" mb-7 ">
           <img src={logo} alt="Divyajivan Lifescience" className="h-10 mb-4" />
-          <p className="text-md leading-relaxed text-white max-w-[75%]">
+          <p className="text-sm md:text-md leading-relaxed text-white max-w-[75%]">
             Leading pharmaceutical manufacturing company in Gujarat with
             state-of-the-art pharmaceutical production facilities. We provide
-            Tablets, Capsules, & ointments (Creams, Gels, and Lotions),
-            Specialised Pharmaceutical Formulations, Customised Pharma Products
-            and Essential Healthcare Solutions.{" "}
+            Tablets, Capsules, & External Preparation (Creams, Gels, and
+            Lotions), Specialized Pharmaceutical Formulations, Customized Pharma
+            Products and Essential Healthcare Solutions.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  flex-col md:flex-row  border-b border-t border-white/10 ">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-t border-white/10">
           {/* Contact Us */}
-          <div className="border-0 md:border-b md:border-r lg:border-b-0 lg:border-r  border-white/10 p-6">
+          <div className="border-0 md:border-b md:border-r lg:border-b-0 lg:border-r border-white/10 p-6">
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm text-white/80">
               <li className="flex items-start space-x-2">
                 <IoLocationSharp className="text-lg mt-0.5" />
                 <span className="w-[90%]">
-                  <p className="font-bold">Corporate Office: </p> 1001 & 1002,
-                  Zircon Arena, Opp. De’villa Restro, Pal R.T.O to Hazira
-                  Road,Surat-394510, Gujarat, India
+                  <p className="font-bold">Corporate Office: </p>
+                  1001 & 1002, Zircon Arena, Opp. De'villa Restro, Pal R.T.O to
+                  Hazira Road, Surat-394510, Gujarat, India
                 </span>
               </li>
               <li className="flex items-start space-x-2">
-                <IoLocationSharp className="text-lg mt-0.5 " />
+                <IoLocationSharp className="text-lg mt-0.5" />
                 <span className="w-[90%]">
-                  <p className="font-bold">Manufacturing Unit: </p>231, 232, 233
-                  RJD Integrated Textile Park, Ichhapore
-                  Surat-394510 Gujarat, India
+                  <p className="font-bold">Manufacturing Unit: </p>
+                  231, 232, 233 RJD Integrated Textile Park, Ichhapore
+                  Surat-394510 Gujarat, India
                 </span>
               </li>
               <li className="flex items-center space-x-2">
@@ -62,6 +63,7 @@ export default function Footer() {
                   </a>
                 </div>
               </li>
+
               <li className="flex items-center space-x-2">
                 <IoCall className="text-lg" />
                 <a href="tel:+916357779200" className="hover:text-white">
@@ -98,27 +100,47 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <Link to="/about" className="hover:text-white">
+                <Link
+                  to="/about"
+                  onClick={scrollToTop}
+                  className="hover:text-white"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/formulation" className="hover:text-white">
+                <Link
+                  to="/formulation"
+                  onClick={scrollToTop}
+                  className="hover:text-white"
+                >
                   Formulation
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-white">
+                <Link
+                  to="/services"
+                  onClick={scrollToTop}
+                  className="hover:text-white"
+                >
                   Service
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-white">
+                <Link
+                  to="/products"
+                  onClick={scrollToTop}
+                  className="hover:text-white"
+                >
                   Products
                 </Link>
               </li>
-               <li>
-                <Link to="/contact" className="hover:text-white">
+              <li>
+                <Link
+                  to="/contact"
+                  onClick={scrollToTop}
+                  className="hover:text-white"
+                >
                   Contact Us
                 </Link>
               </li>
@@ -139,13 +161,13 @@ export default function Footer() {
           {/* WHO GMP Certified */}
           <div className="p-6">
             <h3 className="text-lg font-semibold mb-4">
-              Leading WHO GMP Certified Tablet, Capsule, Ointment Manufacturers
-              In India.
+              Leading WHO GMP Certified Tablet, Capsule, External Preparation
+              Manufacturers In India.
             </h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li>Tablets</li>
               <li>Capsules</li>
-              <li>Ointments (Creams, Gels, and Lotions)</li>
+              <li>External Preparations (Creams, Gels, and Lotions)</li>
             </ul>
           </div>
         </div>

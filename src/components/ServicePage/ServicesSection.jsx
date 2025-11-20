@@ -79,9 +79,9 @@ export default function ServicesSection() {
             </div>
 
             {/* Content Overlay (slides up into view) */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-sky-600/95 to-blue-800/95 text-white translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out p-6 flex flex-col justify-start text-left overflow-y-auto h-[100%]">
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b rounded-2xl from-teal-600/95 to-teal-800/95 text-white translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out p-6 flex flex-col justify-start text-left overflow-y-auto h-[100%]">
               <h3 className="text-3xl font-bold mb-3">{service.title}</h3>
-              <p className="text-sky-100 font-bold text-xl mb-4">
+              <p className="text-teal-50 font-semibold text-xl mb-4">
                 {service.description}
               </p>
               <ul className="text-base space-y-2 list-disc list-inside max-h-full overflow-y-auto scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent">
