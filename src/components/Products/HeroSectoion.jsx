@@ -19,7 +19,7 @@ const HeroSection = ({ pageData }) => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${pageData?.pageBannerImage || banner})`,
+            backgroundImage: `url(${banner})`,
           }}
         >
           <div className="absolute inset-0 bg-radial from-[#00162c]/60 to-[#000f1e]" />
