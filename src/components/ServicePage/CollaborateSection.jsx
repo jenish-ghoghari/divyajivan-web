@@ -46,9 +46,9 @@ const sections = [
 
 const CollaborateSection = () => {
   return (
-    <section className="bg-white py-16 sm:py-20">
+    <section className="bg-white py-8 md:py-16">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
-        <h2 className="text-3xl sm:text-4xl text-center font-bold text-gray-900 leading-tight mb-6">
+        <h2 className="text-2xl sm:text-4xl text-center font-bold text-gray-900 leading-tight mb-6">
           Our Collaboration
         </h2>
 
@@ -56,7 +56,7 @@ const CollaborateSection = () => {
           {sections.map((item, index) => (
             <div
               key={index}
-              className="w-full sm:w-[45%] lg:w-[30%] bg-white rounded-3xl 
+              className="w-full sm:w-[45%] lg:w-[30%] bg-white rounded-2xl 
                  border border-gray-200 p-8 shadow-sm 
                  hover:shadow-lg transition-all"
             >

@@ -32,11 +32,11 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-4xl drop-shadow-lg">
+            <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight max-w-4xl drop-shadow-lg">
               DIVYAJIVAN LIFESCIENCES PVT LTD
             </h1>
 
-            <p className="mt-4 text-base md:text-lg lg:text-xl italic max-w-3xl text-gray-100">
+            <p className="mt-4 text-md md:text-lg lg:text-xl italic md:max-w-3xl text-gray-100">
               Offers a wide range of pharmaceutical products — Tablets,
               Capsules,  External Preparation (Creams, Gels, and Lotions).
             </p>

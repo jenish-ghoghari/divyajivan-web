@@ -3,7 +3,7 @@ import aboutCapsulesGlobal from "../../assets/aboutCapsulesGlobal.jpg";
 
 const InfoSection = () => {
   return (
-    <section className="relative py-14 sm:py-20 md:py-24 lg:py-28 overflow-hidden">
+    <section className="relative py-12 sm:py-20 md:py-24 lg:py-28 overflow-hidden">
       {/* Decorative gradient glows */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 right-16 w-32 h-32 bg-blue-100 rounded-full blur-3xl opacity-40"></div>

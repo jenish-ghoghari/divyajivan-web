@@ -48,7 +48,7 @@ const CoreValues = () => {
 
   return (
     <section
-      className="relative py-20 px-4 bg-cover bg-center bg-no-repeat"
+      className="relative py-12 sm:py-16 md:py-20 px-4 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Dark Overlay */}
@@ -57,7 +57,7 @@ const CoreValues = () => {
       {/* Content Wrapper */}
       <div className="relative z-10">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3">
             Our Core Values
           </h2>
           <p className="text-gray-200 max-w-2xl mx-auto">

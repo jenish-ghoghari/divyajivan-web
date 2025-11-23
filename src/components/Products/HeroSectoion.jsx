@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import parse from "html-react-parser";
 import { motion } from "framer-motion";
 
@@ -63,8 +62,6 @@ const HeroSection = ({ pageData }) => {
   );
 };
 
-HeroSection.propTypes = {
-  pageData: PropTypes.object.isRequired,
-};
+
 
 export default HeroSection;

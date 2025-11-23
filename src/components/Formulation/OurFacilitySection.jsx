@@ -68,9 +68,9 @@ const infrastructureFeatures = [
 
 export default function OurFacilitySection() {
   return (
-    <section className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-20 mt-20 mb-10">
+    <section className="container mx-auto px-5 sm:px-8 md:px-12 lg:px-20 mb-10">
       {/* Header */}
-      <h2 className="text-xl md:text-4xl font-bold text-[#032f5a] mb-10">
+      <h2 className="text-2xl md:text-4xl text-center md:text-left font-bold text-[#032f5a] mb-8 sm:mb-10">
         Facilities we provide{" "}
       </h2>
 
@@ -81,7 +81,7 @@ export default function OurFacilitySection() {
             key={item.id}
             className="bg-white rounded-3xl  transition-all p-8  border border-gray-200"
           >
-            <h3 className={`text-2xl  font-semibold`}>{item.title}</h3>
+            <h3 className={`text-xl md:text-2xl font-semibold`}>{item.title}</h3>
             <p className="text-gray-600 mt-4 text-lg">{item.description}</p>
           </div>
         ))}

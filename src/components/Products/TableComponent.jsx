@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -71,8 +70,5 @@ const TableComponent = ({ pageData }) => {
   );
 };
 
-TableComponent.propTypes = {
-  pageData: PropTypes.object.isRequired,
-};
 
 export default TableComponent;

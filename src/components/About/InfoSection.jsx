@@ -3,7 +3,7 @@ import aboutCapsulesGlobal from "../../assets/aboutpage.jpg";
 
 const InfoSection = () => {
   return (
-    <section className="relative py-14 sm:py-20 md:py-24 lg:py-28 overflow-hidden">
+    <section className="relative py-8 sm:py-20 md:py-24 lg:py-28 overflow-hidden">
       {/* Decorative gradient glows */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 right-16 w-32 h-32 bg-blue-100 rounded-full blur-3xl opacity-40"></div>
@@ -26,7 +26,7 @@ const InfoSection = () => {
 
           {/* Right Content Section */}
           <div className="w-full lg:w-1/2 space-y-5 text-center md:text-left">
-            <h2 className="text-2xl sm:text-3xl  font-bold text-gray-900 leading-tight">
+            <h2 className="text-2xl md:text-3xl  font-bold text-gray-900 leading-tight">
               <p>The Leading</p>  Pharmaceutical in India
               <span className="block mt-4 uppercase text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 ">
                 Divyajivan Lifescience PVT LTD

@@ -1,22 +1,12 @@
 import React, { useEffect, useState } from "react";
-import HeroSection from "../../components/Home/HeroSection";
-import WhyChooseUs from "../../components/Home/WhyChooseUs";
-import DivyaMeaningSection from "../../components/Home/DivyaMeaningSection";
-import AssociateWithUs from "../../components/Home/AssociateWithUs";
-import VisionMissionSection from "../../components/Home/VisionMissionSection";
-import CertificationsSection from "../../components/HomeNew/CertificationsSection";
+import HomePage from "../../components/Home/Main"
 
-const HomePage = () => {
+const Home = () => {
   return (
     <>
-      <HeroSection />
-      <VisionMissionSection />
-      <WhyChooseUs />
-      <DivyaMeaningSection />
-      <AssociateWithUs />
-      <CertificationsSection />
+      <HomePage />
     </>
   );
 };
 
-export default HomePage;
+export default Home;

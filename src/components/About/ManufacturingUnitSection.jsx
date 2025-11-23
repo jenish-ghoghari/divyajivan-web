@@ -50,11 +50,11 @@ export default function ManufacturingUnitSection() {
       <h2 className="text-xl sm:text-3xl font-bold text-center text-gray-800 mb-12">
         Manufacturing Facility
       </h2>
-      <div className="container  mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+      <div className="container  mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-4">
         {manufacturingUnit.map((item) => (
           <div
             key={item.id}
-            className="relative group rounded-3xl border border-gray-200 overflow-hidden shadow-md  transition-all duration-300"
+            className="relative group rounded-3xl border border-gray-200 overflow-hidden shadow-sm  transition-all duration-300"
           >
             {/* Background Image */}
             <div

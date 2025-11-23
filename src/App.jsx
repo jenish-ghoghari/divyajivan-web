@@ -1,21 +1,27 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import "./index.css";
 import MainLayout from "./layout/MainLayout";
-import HomeNew from "./pages/HomeNew";
+import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import ContactPage from "./pages/Contact";
 import FormulationPage from "./pages/Formulation";
 import ServicePage from "./pages/ServicePage";
 import ProductPage from "./pages/Products";
-import ContactPage from "./pages/Contact";
 
 const App = () => {
+  const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
-    <BrowserRouter>
+    <>
       <Routes>
-        {/* Main layout wrapper */}
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomeNew />} /> {/* Default home route */}
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="formulation" element={<FormulationPage />} />
           <Route path="services" element={<ServicePage />} />
@@ -23,7 +29,7 @@ const App = () => {
           <Route path="contact" element={<ContactPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </>
   );
 };
 

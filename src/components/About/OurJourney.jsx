@@ -49,14 +49,14 @@ const timelineData = [
 
 const OurJourney = () => {
   return (
-    <section className="py-16 bg-gray-100/80">
+    <section className="py-10 m:py-16 bg-gray-100/80">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
-        <h2 className="text-xl sm:text-3xl font-bold text-center text-gray-800 mb-12">
+        <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 md:mb-12">
           Milestones Reached in Our Journey of Growth & Innovation{" "}
         </h2>
 
         {/* Cards Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:gap-8  sm:grid-cols-2 lg:grid-cols-3">
           {timelineData.map((item, index) => (
             <div
               key={index}
