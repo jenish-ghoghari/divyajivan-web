@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFlask, FaMicroscope, FaVials, FaCapsules } from "react-icons/fa";
-import microscopeImg from "../../assets/lab.jpeg";
+import microscopeImg from "../../assets/Lab.jpeg";
 import { Link } from "react-router-dom";
 
 const services = [
