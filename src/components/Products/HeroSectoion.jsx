@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 import { motion } from "framer-motion";
 
 // IMAGES
-import banner from "../../assets/lab.jpeg";
+import banner from "../../assets/Lab.jpeg";
 import NavBar from "../common/navbar/NavBar";
 
 const HeroSection = ({ pageData }) => {
