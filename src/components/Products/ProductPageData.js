@@ -640,16 +640,7 @@ export const productPagesData = [
           "Clotrimazole + Beclomethasone Dipropionate Lotion",
         ],
       },
-      {
-        id: "D",
-        title: "Solution",
-        items: [
-          "2-Propanol + 1-Propanol + Mecetronium Ethyl Sulphate Disinfectant Solution",
-          "Chlorhexidine Gluconate + Cetrimide Solution",
-          "Chloroxylenol, Terpineol + Isopropyl Alcohol Antiseptic Solution",
-          "Chlorhexidine Gluconate + Strong Cetrimide Solution",
-        ],
-      },
+     
     ],
   },
 ];
