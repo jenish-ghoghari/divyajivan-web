@@ -5,6 +5,7 @@ import HeroSection from "../../components/Products/HeroSectoion";
 import TableComponent from "../../components/Products/TableComponent";
 import { productPagesData } from "../../components/Products/ProductPageData";
 import { useParams } from "react-router-dom";
+import { commercialKeywords, localKeywords, longTailKeywords, nicheKeywords, primaryKeywords } from "../SeoKeywords";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -20,10 +21,17 @@ const ProductPage = () => {
     pageData?.description ||
     "Explore our complete range of globally certified pharmaceutical products, including tablets, capsules, syrups, ointments, and advanced healthcare formulations.";
 
-  const keywords =
-    pageData?.keywords ||
-    "pharmaceutical products, pharma formulations, tablets manufacturer, capsules manufacturer, divyajivan lifesciences, medicines export";
+  
 
+     const keywords = [
+    ...primaryKeywords,
+    ...longTailKeywords,
+    ...nicheKeywords,
+    ...commercialKeywords,
+    ...localKeywords,
+    ...(pageData?.keywords ||     "pharmaceutical products, pharma formulations, tablets manufacturer, capsules manufacturer, divyajivan lifesciences, medicines export"),
+  ].join(", ");
+  
   return (
     <>
       <Helmet>

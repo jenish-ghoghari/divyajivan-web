@@ -1,9 +1,12 @@
-
+import Tablet from "../../assets/Tablet-Photo.jpg";
+import Capsules from "../../assets/Capsule-Photo.jpg";
+import ExternalPreparation from "../../assets/External-Preparation-Photo.jpg";
 
 export const productPagesData = [
   {
     pageTitle: "Tablets",
     pageUrl: "tablets",
+    pageBannerImage: Tablet,
     pageDescription:
       "Explore our range of high-quality tablets designed to provide effective relief and optimal healthcare solutions. Our products meet stringent quality standards to ensure safety and efficacy",
     pageSubDescription: "",
@@ -404,6 +407,7 @@ export const productPagesData = [
   {
     pageTitle: "Capsule",
     pageUrl: "capsules",
+    pageBannerImage: Capsules,
     pageDescription:
       "Discover our range of high-quality capsules, formulated for superior absorption and effectiveness. Designed to meet diverse healthcare needs, ensuring safety and quality.",
     pageSubDescription:
@@ -544,6 +548,7 @@ export const productPagesData = [
   {
     pageTitle: "External Preparations",
     pageUrl: "external-preparations",
+    pageBannerImage: ExternalPreparation,
     pageDescription:
       "Discover our range of high-quality topical formulations, including creams, External Preparation, Gels. Designed for fast absorption, deep penetration, and effective relief.",
     pageSubDescription:

@@ -56,7 +56,7 @@ export default function NavBar() {
                 className="
                   absolute left-0 top-full mt-2 w-56 
                   bg-white/90 backdrop-blur-md 
-                  text-gray-800 shadow-xl rounded-xl 
+                  text-gray-800 shadow-xl rounded-2xl 
                   opacity-0 invisible 
                   group-hover:opacity-100 group-hover:visible 
                   translate-y-2 group-hover:translate-y-0
@@ -69,7 +69,7 @@ export default function NavBar() {
                     to={sub.path}
                     className="
                       block px-5 py-3 
-                      text-sm first:rounded-t-lg last:rounded-b-lg 
+                      text-sm first:rounded-t-2xl last:rounded-b-2xl 
                       hover:bg-teal-400 hover:text-white 
                       transition-all duration-200
                     "

@@ -24,7 +24,7 @@ export default function CertificationsSection() {
             key={item.id}
             className="border border-gray-200 rounded-3xl bg-white flex flex-col items-center p-6 transition-all"
           >
-            <div className="w-full lg:h-30 xl:h-40 flex items-center justify-center">
+            <div className="w-full lg:h-30 xl:h-50 flex items-center justify-center">
               <img src={item.image} className="w-full h-full object-contain" />
             </div>
             <h3 className="text-black text-lg font-semibold text-center mt-4">
@@ -42,7 +42,7 @@ export default function CertificationsSection() {
               key={item.id}
               className="border border-gray-200 rounded-3xl  bg-white flex flex-col items-center p-6 mx-4 w-60"
             >
-              <div className="w-full h-32 flex items-center justify-center">
+              <div className="w-full h-50 flex items-center justify-center">
                 <img src={item.image} className="w-full h-full object-contain" />
               </div>
               <h3 className="text-black text-base font-semibold text-center mt-3">
